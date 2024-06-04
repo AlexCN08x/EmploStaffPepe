@@ -24,9 +24,9 @@
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.emplostaff2.ui.slideshow.SlideshowFragment"
+        android:name="com.example.emplostaff2.ui.ShowExtraHours.ShowExtraHoursFragment"
         android:label="Extra Hours"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_show_extra_hours" />
     <fragment
         android:id="@+id/nav_ayuda"
         android:name="com.example.emplostaff2.ui.Help.HelpFragment"

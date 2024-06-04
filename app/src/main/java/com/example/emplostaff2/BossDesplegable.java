@@ -62,7 +62,7 @@ public class BossDesplegable extends AppCompatActivity {
 
         // Definir los elementos de menú que se consideran como destinos de nivel superior
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_Whorkforce, R.id.nav_BaseData, R.id.nav_Penalties)
+                R.id.nav_Whorkforce, R.id.nav_BaseData, R.id.nav_Penalties,R.id.nav_chat)
                 .setOpenableLayout(drawer)
                 .build();
 

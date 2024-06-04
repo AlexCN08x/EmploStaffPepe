@@ -69,7 +69,7 @@ public class StaffDesplegable extends AppCompatActivity {
         NavigationView navigationView = binding.navView;
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_ayuda, R.id.nav_BaseData)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_ayuda, R.id.nav_BaseData,R.id.nav_chat)
                 .setOpenableLayout(drawer)
                 .build();
 

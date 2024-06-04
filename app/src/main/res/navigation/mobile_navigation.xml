@@ -25,7 +25,7 @@
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.emplostaff2.ui.ShowExtraHours.ShowExtraHoursFragment"
-        android:label="Extra Hours"
+        android:label="Show Extra Hours"
         tools:layout="@layout/fragment_show_extra_hours" />
     <fragment
         android:id="@+id/nav_ayuda"

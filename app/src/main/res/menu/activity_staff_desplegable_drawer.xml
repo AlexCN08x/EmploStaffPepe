@@ -20,15 +20,15 @@
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@android:drawable/ic_lock_idle_alarm"
-            android:title="Extra Hours" />
+            android:title="Show Extra Hours" />
         <item
             android:id="@+id/nav_ayuda"
-            android:icon="@android:drawable/ic_dialog_alert"
+            android:icon="@android:drawable/ic_menu_info_details"
             android:actionLayout="@layout/fragment_help"
             android:title="Help" />
         <item
             android:id="@+id/nav_chat"
-            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:icon="@android:drawable/ic_dialog_email"
             android:actionLayout="@layout/fragment_chat"
             android:title="Chat" />
     </group>

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/nav_log_out"
+        android:icon="@android:drawable/ic_lock_power_off"
         android:orderInCategory="100"
         android:title="Log Out"
         app:showAsAction="never" />

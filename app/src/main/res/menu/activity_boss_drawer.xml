@@ -18,7 +18,7 @@
             android:title="Penalties" />
         <item
             android:id="@+id/nav_chat"
-            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:icon="@android:drawable/ic_dialog_email"
             android:actionLayout="@layout/fragment_chat"
             android:title="Chat" />
 

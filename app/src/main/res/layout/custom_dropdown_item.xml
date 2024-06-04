@@ -2,9 +2,9 @@
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/white"
     android:fontFamily="@font/teko_light"
     android:gravity="center"
     android:padding="8dp"
     android:textColor="@android:color/holo_red_dark"
-    android:background="@color/white"
-    android:textSize="27dp" /> <!-- Change to desired size -->
+    android:textSize="34sp" /> <!-- Change to desired size -->

@@ -6,5 +6,5 @@
     android:gravity="center"
     android:padding="8dp"
     android:textColor="@color/black"
-    android:textSize="27dp" /> <!-- Change to desired size -->
+    android:textSize="34sp" /> <!-- Change to desired size -->
 

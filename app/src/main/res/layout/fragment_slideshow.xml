@@ -1,185 +1,149 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:padding="16dp"
     android:background="@color/white">
 
     <TextView
         android:id="@+id/texttitulohoras"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/teko_light"
+        android:gravity="center"
         android:text="Extra Hours"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <TextView
+        android:id="@+id/texttitulohoras3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/teko_light"
         android:gravity="center"
-        android:paddingBottom="16dp" />
+        android:text="ID"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.312" />
+
+    <TextView
+        android:id="@+id/texttitulohoras4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/teko_light"
+        android:gravity="center"
+        android:text="DAY"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <TextView
+        android:id="@+id/texttitulohoras5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/teko_light"
+        android:gravity="center"
+        android:text="HOUR"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.312" />
 
     <TextView
         android:id="@+id/textViewDate"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/teko_light"
-        android:gravity="center"
-        android:paddingBottom="16dp"
         android:text="Selected Date"
         android:textColor="@color/black"
-        android:textSize="27dp" />
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656" />
 
     <Button
         android:id="@+id/buttonOpenCalendar"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Date"
-        android:textSize="27dp"
+        android:backgroundTint="@color/white"
         android:fontFamily="@font/teko_light"
         android:gravity="center"
-        android:backgroundTint="@color/design_default_color_error" />
+        android:text="Select Date"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434" />
 
     <Button
         android:id="@+id/buttonSaveHours"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/design_default_color_error"
         android:fontFamily="@font/teko_light"
         android:gravity="center"
         android:text="Submit"
-        android:textSize="27dp" />
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
 
-    <TextView
-        android:id="@+id/textViewTotalHours"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/id_pp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
         android:fontFamily="@font/teko_light"
-        android:textColor="@color/black"
         android:gravity="center"
-        android:text="REGISTRED EXTRA HOURS"
-        android:textSize="27dp" />
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:hint="ID:"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/name_tl"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/borde"
-            android:fontFamily="@font/teko_light"
-            android:gravity="center"
-            android:text="ID"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="27sp" />
-
-        <TextView
-            android:id="@+id/lastname_tl"
-            android:layout_width="105dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/borde"
-            android:fontFamily="@font/teko_light"
-            android:gravity="center"
-            android:text="Day"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="27sp" />
-
-        <TextView
-            android:id="@+id/Id_tl"
-            android:layout_width="105dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/borde"
-            android:fontFamily="@font/teko_light"
-            android:gravity="center"
-            android:text="Hour"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="27sp" />
-
-        <TextView
-            android:id="@+id/salary_tl"
-            android:layout_width="68dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/borde"
-            android:fontFamily="@font/teko_light"
-            android:gravity="center"
-            android:text="Status"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="27sp" />
-
-    </TableRow>
-
-    <ScrollView
-        android:id="@+id/scroll"
-        android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.407">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425" />
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TableLayout
-                android:id="@+id/tl_tabla"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </TableLayout>
-        </LinearLayout>
-
-    </ScrollView>
-
-    <RadioGroup
-        android:id="@+id/Opciones_User"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/Button_manager_tl"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="120dp"
-            android:fontFamily="@font/teko_light"
-            android:gravity="center"
-            android:text="TO DO"
-            android:textColor="@color/black"
-            android:textSize="27sp" />
-
-        <RadioButton
-            android:id="@+id/Button_staff_tl"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/teko_light"
-            android:gravity="center"
-            android:text="DONE"
-            android:textColor="@color/black"
-            android:textSize="27sp" />
-
-    </RadioGroup>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

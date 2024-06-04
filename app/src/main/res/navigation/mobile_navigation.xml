@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_BaseData">
+
+    <fragment
+        android:id="@+id/nav_BaseData"
+        android:name="com.example.emplostaff2.ui.BasicData.BasicDataFragment"
+        android:label="Basic Data"
+        tools:layout="@layout/fragment_basic_data" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.emplostaff2.ui.gallery.GalleryFragment"
+        android:label="Salary"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.emplostaff2.ui.home.HomeFragment"
+        android:label="Holidays"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.emplostaff2.ui.slideshow.SlideshowFragment"
+        android:label="Extra Hours"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_ayuda"
+        android:name="com.example.emplostaff2.ui.Help.HelpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.example.emplostaff2.ui.Chat.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" />
+
+</navigation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation3"
+    app:startDestination="@+id/nav_BaseData">
+
+    <fragment
+        android:id="@+id/nav_Whorkforce"
+        android:name="com.example.emplostaff2.ui.Workforce.WorkforceFragment"
+        android:label="Workforce"
+        tools:layout="@layout/fragment_workforce" />
+    <fragment
+        android:id="@+id/nav_BaseData"
+        android:name="com.example.emplostaff2.ui.BasicData.BasicDataFragment"
+        android:label="Basic Data"
+        tools:layout="@layout/fragment_basic_data" />
+    <fragment
+        android:id="@+id/nav_Penalties"
+        android:name="com.example.emplostaff2.ui.Penalties.PenaltiesFragment"
+        android:label="Penalties"
+        tools:layout="@layout/fragment_put_penalties" />
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.example.emplostaff2.ui.Chat.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" />
+
+
+</navigation>

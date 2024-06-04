@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_BaseData"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:actionLayout="@layout/fragment_basic_data"
+            android:title="Basic Data" />
+        <item
+            android:id="@+id/nav_crea_usuario"
+            android:icon="@android:drawable/ic_input_add"
+            android:actionLayout="@layout/fragment_help"
+            android:title="Create User" />
+        <item
+            android:id="@+id/nav_modifica_usuario"
+            android:icon="@android:drawable/stat_notify_sync"
+            android:actionLayout="@layout/fragment_help"
+            android:title="Modify User" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/euro"
+            android:title="Salary" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="Calendar" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@android:drawable/ic_lock_idle_alarm"
+            android:title="Extra Hours" />
+        <item
+            android:id="@+id/nav_ayuda"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:actionLayout="@layout/fragment_help"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:actionLayout="@layout/fragment_chat"
+            android:title="Chat" />
+
+    </group>
+</menu>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowWorkforce"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/teko_light"
+        android:text="WORKFORCE"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="409dp"
+        android:layout_height="357dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.407">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tl_tabla"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RadioGroup
+        android:id="@+id/Opciones_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="590dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/Button_manager_tl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/teko_light"
+            android:gravity="center"
+            android:text="MANAGER"
+            android:textColor="@color/black"
+            android:textSize="27sp" />
+
+        <RadioButton
+            android:id="@+id/Button_staff_tl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/teko_light"
+            android:gravity="center"
+            android:text="STAFF"
+            android:textColor="@color/black"
+            android:textSize="27sp" />
+
+    </RadioGroup>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-270dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/name_tl"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde"
+            android:fontFamily="@font/teko_light"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/lastname_tl"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde"
+            android:fontFamily="@font/teko_light"
+            android:gravity="center"
+            android:text="Last Name"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/Id_tl"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde"
+            android:fontFamily="@font/teko_light"
+            android:gravity="center"
+            android:text="ID"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/salary_tl"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde"
+            android:fontFamily="@font/teko_light"
+            android:gravity="center"
+            android:text="Salary"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="27sp" />
+
+    </TableRow>
+</androidx.constraintlayout.widget.ConstraintLayout>

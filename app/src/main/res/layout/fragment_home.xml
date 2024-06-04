@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titulovacaciones"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:text="Calendar"
+        android:textAlignment="center"
+        android:fontFamily="@font/teko_light"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="65sp" />
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/variableCobro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:textSize="18sp" />
+
+</LinearLayout>

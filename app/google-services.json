@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "567511459279",
+    "project_id": "emplostaff2",
+    "storage_bucket": "emplostaff2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567511459279:android:e15ed1e94cc2890dcddeba",
+        "android_client_info": {
+          "package_name": "com.example.emplostaff2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7DCJhHSxdYVFAngFrTpLSpmaBXDW2yok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

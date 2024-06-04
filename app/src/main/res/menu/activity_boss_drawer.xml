@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_BaseData"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="Basic Data" />
+        <item
+            android:id="@+id/nav_Whorkforce"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Whorkforce" />
+        <item
+            android:id="@+id/nav_Penalties"
+            android:icon="@android:drawable/arrow_down_float"
+            android:title="Penalties" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:actionLayout="@layout/fragment_chat"
+            android:title="Chat" />
+
+    </group>
+</menu>

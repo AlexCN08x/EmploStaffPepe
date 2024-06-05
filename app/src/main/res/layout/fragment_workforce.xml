@@ -99,7 +99,7 @@
 
         <TextView
             android:id="@+id/name_tl"
-            android:layout_width="100dp"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:background="@drawable/borde"
             android:fontFamily="@font/teko_light"
@@ -110,7 +110,7 @@
 
         <TextView
             android:id="@+id/lastname_tl"
-            android:layout_width="110dp"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:background="@drawable/borde"
             android:fontFamily="@font/teko_light"
@@ -121,7 +121,7 @@
 
         <TextView
             android:id="@+id/Id_tl"
-            android:layout_width="100dp"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:background="@drawable/borde"
             android:fontFamily="@font/teko_light"
@@ -132,7 +132,7 @@
 
         <TextView
             android:id="@+id/salary_tl"
-            android:layout_width="70dp"
+            android:layout_width="68dp"
             android:layout_height="wrap_content"
             android:background="@drawable/borde"
             android:fontFamily="@font/teko_light"

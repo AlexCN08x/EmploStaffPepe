@@ -35,6 +35,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.time.LocalDate;
+import java.time.Year;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -44,6 +45,7 @@ public class SlideshowFragment extends Fragment {
 
     private FragmentSlideshowBinding binding;
     private TextView textViewDate;
+    private TextView textViewHola;
     private EditText editTextExtraHours;
     private TextView textViewTotalHours;
     private TextView textViewPayment;
@@ -60,6 +62,7 @@ public class SlideshowFragment extends Fragment {
         sharedViewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
 
         textViewDate = rootView.findViewById(R.id.textViewDate);
+        textViewHola=rootView.findViewById(R.id.textViewDate3);
 
         Spinner spinner = rootView.findViewById(R.id.spinner);
 
@@ -107,7 +110,7 @@ public class SlideshowFragment extends Fragment {
                         Map<String, Object> newPenalty = new HashMap<>();
                         newPenalty.put("Hours",hora_seleccionada);
                         newPenalty.put("Day",selectedDate);
-                        newPenalty.put("State","To Do");
+                        newPenalty.put("State","ToDo");
                         String[] usersplit=et.getText().toString().split("");
                         String letraiuser=usersplit[0];
                         String id_pp="";
@@ -134,8 +137,31 @@ public class SlideshowFragment extends Fragment {
         DatePickerDialog datePickerDialog = new DatePickerDialog(requireContext(), new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                selectedDate = dayOfMonth + "/" + (month + 1) + "/" + year;
-                textViewDate.setText(selectedDate);
+
+
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                    LocalDate today = LocalDate.now();
+                    String monthh;
+                    String dayy;
+                    String today_day = String.valueOf(today.getDayOfMonth());
+                    String today_month = String.valueOf(today.getMonthValue());
+                    String today_year = String.valueOf(today.getYear());
+                            if (dayOfMonth<10){
+                                dayy="0"+String.valueOf(dayOfMonth);
+                            }else {
+                                dayy=String.valueOf(dayOfMonth);
+                            }
+                            if (month+1<10){
+                                monthh="0"+String.valueOf(month+1);
+                            }
+                            else {
+                                monthh=String.valueOf(month+1);
+                            }
+                            selectedDate = dayy + "/" + monthh+ "/" + year;
+                            textViewDate.setText(selectedDate);
+                            textViewHola.setText("");
+                }
+
             }
         }, Calendar.getInstance().get(Calendar.YEAR), Calendar.getInstance().get(Calendar.MONTH), Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
         datePickerDialog.show();

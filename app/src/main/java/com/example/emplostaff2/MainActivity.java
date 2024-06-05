@@ -24,6 +24,8 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
     public static String Id;
+    public static String nombre;
+    public static String apellido;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,10 +42,13 @@ public class MainActivity extends AppCompatActivity {
                 DocumentReference ref=db.collection("Users").document(user.getText().toString());
                 ScriptDeletePenalties30Days.script();
                 ScriptUpdatePaymentDay.script();
+                ScriptDoneExtraHours.script();
                 ref.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                         String passwors_fb=documentSnapshot.getString("Password");
+                        nombre=documentSnapshot.getString("Name");
+                        apellido=documentSnapshot.getString("LastName");
                         String[] user_desglosado=user.getText().toString().split("");
                         if (user_desglosado[0].equals("S") || user_desglosado[0].equals("M") || user_desglosado[0].equals("B")) {
                             if (user_desglosado.length==8 && user_desglosado[1].equals("-")) {

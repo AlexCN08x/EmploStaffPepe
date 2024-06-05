@@ -16,14 +16,21 @@ import com.example.emplostaff2.MainActivity;
 import com.example.emplostaff2.R;
 import com.example.emplostaff2.ui.Chat.ChatAdapter;
 import com.example.emplostaff2.ui.Chat.Message;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.firestore.DocumentChange;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
 
 public class ChatFragment extends Fragment {
 
@@ -76,7 +83,8 @@ public class ChatFragment extends Fragment {
     }
 
     private void sendMessage(String text) {
-        String sender = MainActivity.Id;
+
+        String sender = MainActivity.nombre+" "+MainActivity.apellido+" "+"("+MainActivity.Id.substring(0,1)+")";
         long timestamp = System.currentTimeMillis();
         Message message = new Message(text, sender, timestamp);
         messagesRef.add(message);

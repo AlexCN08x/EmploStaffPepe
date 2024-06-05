@@ -76,7 +76,12 @@ public class CrearUsuarioFragment extends Fragment {
                                     String password = "admin";
                                     Map<String, Object> newUser = new HashMap<>();
                                     newUser.put("Password", password);
-                                    newUser.put("NIF", nif.getText().toString());
+                                    Integer longe=nif.getText().toString().length();
+                                    if (nif.getText().toString().substring(8,9).equals("0") || nif.getText().toString().substring(8,9).equals("1")  || nif.getText().toString().substring(8,9).equals("2")  || nif.getText().toString().substring(8,9).equals("3")  || nif.getText().toString().substring(8,9).equals("4")  || nif.getText().toString().substring(8,9).equals("5")  || nif.getText().toString().substring(8,9).equals("6")  || nif.getText().toString().substring(8,9).equals("7")  || nif.getText().toString().substring(8,9).equals("8")  || nif.getText().toString().substring(8,9).equals("9")){
+                                        tw.setText("Invalid NIF");
+                                    }else {
+                                        newUser.put("NIF", nif.getText().toString());
+                                    }
                                     newUser.put("Name", name.getText().toString());
                                     newUser.put("LastName", lastname.getText().toString());
                                     newUser.put("Base Salary", "0");
